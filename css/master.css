@@ -1,0 +1,208 @@
+
+/**********************Overall-Setting**********************/
+
+body {
+  text-align: center;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: white;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+img {
+  margin: 0;
+}
+
+/**********************Header-Styles**********************/
+
+.header {
+  background-color: #206a5d;
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  margin: 0;
+}
+
+.header-in {
+  height: 6vh;
+  width: 90%;
+  margin: 2vh 5%;
+  position: absolute;
+  display: flex;
+}
+
+.brand-name {
+  position: relative;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.brand-name p {
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.main-categories {
+  width: 510px;
+  display: flex;
+  margin-left: auto;
+}
+
+.mc-list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  position: relative;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.mc-list a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+  width: 120px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family:'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0.5vh 11% 0.5vh 0;
+}
+
+/**********************Welcome_Note_Section**********************/
+
+.welcome-note {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background-color: #206a5d;
+
+}
+
+.wn-container {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.wn-content {
+  position: relative;
+  text-align: left;
+  width: 50%;
+
+}
+
+.wn-text {
+  position: relative;
+  margin-right: auto;
+  display: flex;
+  font-weight: bolder;
+  font-size: 2.2rem;
+  padding-top: 6vh;
+  margin-bottom: 10px;
+}
+
+.wn-search {
+  position: relative;
+  display: flex;
+
+}
+
+.wn-image-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: right;
+}
+
+.wn-image {
+  position: relative;
+  height: 52vh;
+  padding-top: 8vh;
+
+}
+
+/**********************Features_Section**********************/
+
+.features {
+  width: 100%;
+  /* height was 50vh */
+  height: 30vh;
+  position: relative;
+}
+
+.f-container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.feature-item {
+  width: 21.33%;
+  height: 100%;
+  padding: 0 6%;
+}
+
+.f-icon {
+  /* width was 170px */
+  width: 70px;
+  /* padding top was 50px */
+  padding-top: 30px;
+}
+
+.fi-heading {
+  font-size: 1.2rem;
+  color: #206a5d;
+  margin-bottom: 8px;
+}
+
+.fi-subheading {
+  color: #206a5d;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+/**********************Carrousal_Section**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End */
