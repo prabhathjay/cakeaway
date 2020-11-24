@@ -23,24 +23,37 @@ img {
   margin: 0;
 }
 
+button:focus, input:focus {
+  outline: none;
+}
+
 /**********************Header-Styles**********************/
 
 .header {
   background-color: #206a5d;
   width: 100%;
   height: 10vh;
-  position: relative;
+  position: fixed;
   margin: 0;
+  z-index: 2;
+  transition-duration: 0.4s;
+}
+
+/* header animation on scroll */
+.onscroll {
+  background-color: white;
+  color: #206a5d;
 }
 
 .header-in {
-  height: 6vh;
-  width: 90%;
-  margin: 2vh 5%;
-  position: absolute;
+  height: 10vh;
+  width: 100%;
+  padding: 2vh 5%;
+  position: relative;
   display: flex;
 }
 
+/* name "cakeaway" on top left */
 .brand-name {
   position: relative;
   display: flex;
@@ -54,10 +67,12 @@ img {
   font-weight: normal;
 }
 
+/* main categories container displayed in header (button also includes)*/
 .main-categories {
-  width: 510px;
+  width: 32rem;
   display: flex;
-  margin-left: auto;
+  /* margin-left: auto; */
+  margin: auto 0 auto auto;
 }
 
 .mc-list {
@@ -72,29 +87,65 @@ img {
   list-style: none;
 }
 
-.mc-list a {
+.mc-list-item {
   text-decoration: none;
   color: white;
   font-family: 'Montserrat', sans-serif;
+  /* transition-duration: 0.4s; */
+
 }
 
-.button {
-  width: 120px;
+.mc-list a:hover {
+  font-size: 1.2rem;
+}
+
+.myshop {
+  width: 9.6rem;
+  height: 5.3vh;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: normal;
+  color: white;
   font-family:'Montserrat', sans-serif;
   text-align: center;
-  margin: 0.5vh 11% 0.5vh 0;
+  margin-right: 11%;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: #206a5d;
+  transition-duration: 0.4s;
+}
+
+.myshop:hover {
+  background-color: #81b214;
+  color: white;
+  border: 2px solid #81b214;
+}
+
+.myshop:active {
+  opacity: 0.8;
+}
+/**********************Search_Section**********************/
+
+.search {
+  width: 100%;
+  height: 18vh;
+  padding-top: 10vh;
+  z-index: 1;
+  background-color: #206a5d;
+  position: fixed;
+  /* display: none; */
 }
 
 /**********************Welcome_Note_Section**********************/
 
 .welcome-note {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   position: relative;
   background-color: #206a5d;
-
+  margin: 0;
+  padding-top: 10vh;
+  /* box-sizing: content-box; */
 }
 
 .wn-container {
@@ -103,6 +154,7 @@ img {
   height: 100%;
   margin: 0 auto;
   display: flex;
+
 }
 
 .wn-content {
@@ -118,7 +170,7 @@ img {
   display: flex;
   font-weight: bolder;
   font-size: 2.2rem;
-  padding-top: 6vh;
+  padding-top: 8vh;
   margin-bottom: 10px;
 }
 
@@ -126,6 +178,53 @@ img {
   position: relative;
   display: flex;
 
+}
+
+.wn-search-input {
+  width: 80%;
+  border: 3px solid white;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family:'Montserrat', sans-serif;
+  color: #206a5d;
+  background-image: url(images\loupe.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 8px 20px 8px 40px;
+}
+
+.wn-search-input:focus {
+  background-color: #f6fff8;
+}
+
+.wn-search-form {
+  width: 70%;
+  display: flex;
+}
+
+.wn-search-button {
+  width: 100px;
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+  font-family:'Montserrat', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #81b214;
+  border-radius: 3px;
+  background-color: #81b214;
+  margin-left: 10px;
+  transition-duration: 0.15s;
+}
+
+.wn-search-button:active {
+  opacity: 0.8;
+}
+
+.wn-search-button:focus {
+  outline: none;
+  /* box-shadow:0 0 0 2px #81b214; */
 }
 
 .wn-image-container {
@@ -139,39 +238,13 @@ img {
   position: relative;
   height: 52vh;
   padding-top: 8vh;
-
+  box-sizing: content-box;
 }
 
 /**********************Features_Section**********************/
 
-.features {
-  width: 100%;
-  /* height was 50vh */
-  height: 30vh;
-  position: relative;
-}
 
-.f-container {
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-}
-
-.feature-item {
-  width: 21.33%;
-  height: 100%;
-  padding: 0 6%;
-}
-
-.f-icon {
-  /* width was 170px */
-  width: 70px;
-  /* padding top was 50px */
-  padding-top: 30px;
-}
-
-.fi-heading {
+/* .fi-heading {
   font-size: 1.2rem;
   color: #206a5d;
   margin-bottom: 8px;
@@ -182,11 +255,15 @@ img {
   font-size: 0.9rem;
   font-weight: 500;
   margin-top: 0;
-}
+} */
 
 /**********************Carrousal_Section**********************/
 
-
+.test {
+  height: 1000px;
+  width: 100px;
+  background-color: blue;
+}
 
 
 
