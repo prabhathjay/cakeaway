@@ -95,7 +95,7 @@ button:focus, input:focus {
 
 }
 
-.mc-list a:hover {
+.mc-list-item:hover {
   font-size: 1.2rem;
 }
 
