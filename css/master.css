@@ -97,6 +97,9 @@ button:focus, input:focus {
 
 .mc-list-item:hover {
   font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .myshop {
