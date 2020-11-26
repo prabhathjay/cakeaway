@@ -4,7 +4,7 @@
 body {
   text-align: center;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat',sans-serif;
 }
 
 p {
@@ -87,21 +87,53 @@ button:focus, input:focus {
   list-style: none;
 }
 
-.mc-list-item {
+/* main categories list item ancher tag */
+.mcli-a {
   text-decoration: none;
   color: white;
   font-family: 'Montserrat', sans-serif;
   /* transition-duration: 0.4s; */
-
 }
 
-.mc-list-item:hover {
-  font-size: 1.2rem;
+.mcli-a:hover {
+  /* font-size: 1.2rem; */
   text-decoration: none;
-  color: white;
   font-family: 'Montserrat', sans-serif;
 }
 
+/* underline animation */
+.mcl-item {
+  position: relative;
+}
+
+
+.mcli-a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/*underline should absolutely postioned relative to parent (li) */
+
+.mcli-a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 2px;
+  right: 0;
+  background: #fff;
+  transition: width 0.4s ease;
+}
+
+.mcli-a:hover:after {
+  width: 100%;
+  left: 0;
+  background: #fff;
+}
+
+
+/* my shop button styles */
 .myshop {
   width: 9.6rem;
   height: 5.3vh;
@@ -115,7 +147,7 @@ button:focus, input:focus {
   border: 1px solid white;
   border-radius: 3px;
   background-color: #206a5d;
-  transition-duration: 0.4s;
+  transition-duration: 0.15s;
 }
 
 .myshop:hover {
@@ -125,7 +157,7 @@ button:focus, input:focus {
 }
 
 .myshop:active {
-  opacity: 0.8;
+  background-color: #206a5d;
 }
 /**********************Search_Section**********************/
 
@@ -222,7 +254,7 @@ button:focus, input:focus {
 }
 
 .wn-search-button:active {
-  opacity: 0.8;
+  background-color: #206a5d;
 }
 
 .wn-search-button:focus {
@@ -244,22 +276,124 @@ button:focus, input:focus {
   box-sizing: content-box;
 }
 
-/**********************Features_Section**********************/
+/**********************Popular_Searches_Section**********************/
 
-
-/* .fi-heading {
-  font-size: 1.2rem;
-  color: #206a5d;
-  margin-bottom: 8px;
+/* section styles */
+.popular-searches {
+  width: 100%;
 }
 
-.fi-subheading {
-  color: #206a5d;
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin-top: 0;
-} */
+/* section heading div */
+.ps-heading {
+  height: 5.5rem;
+  position: relative;
+  text-align: left;
+}
 
+/* section heading h1 element */
+.ps-heading-text {
+  color: #206a5d;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 1.75rem 0 1.75rem 0;
+  margin-bottom: 0;
+  height: 100%;
+
+}
+
+/* items container div */
+.ps-container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* container div for popular cards */
+.ps-items {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* container div for each card */
+.ps-item {
+  width: 20%;
+  height: 100%;
+  padding: 1rem;
+}
+
+/**********************Card_styles**********************/
+
+.card {
+  text-align: left;
+  box-shadow: 0 0 3px grey;
+  border: none;
+}
+
+.card-img {
+  height: 9rem;
+  border-radius: 0;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px grey;
+}
+
+.item-name {
+  padding: 0.8rem 1rem 0 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.item-shop-details {
+  padding: 0 1rem 0 1rem;
+  font-size: 0.7rem;
+}
+
+.item-shop-name {
+  font-weight: bold;
+}
+
+.item-shop-location {
+
+}
+
+.item-price-n-btn {
+  display: flex;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  justify-content: space-between;
+}
+
+.item-price {
+  margin: 0.45rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+.item-price-amount {
+
+}
+
+/* add to cart button */
+.atc-btn {
+  width: 7rem;
+  height: 5.3vh;
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+  font-family:'Montserrat', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid white;
+  /* border-radius: 3px; */
+  background-color: #81b214;
+  transition-duration: 0.15s;
+}
+
+.atc-btn:active {
+  background-color: #206a5d;
+}
 /**********************Carrousal_Section**********************/
 
 .test {
