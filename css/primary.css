@@ -1,0 +1,43 @@
+body {
+  text-align: center;
+  margin: 0;
+  font-family: 'Montserrat',sans-serif;
+  color: #206a5d;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #206a5d;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #206a5d;
+}
+
+img {
+  margin: 0;
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+
+ul, li, a {
+  list-style: none;
+  text-decoration: none;
+  color: #206a5d;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul li a:hover {
+  color: #206a5d;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  background-color: white;
+}
