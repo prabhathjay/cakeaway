@@ -17,6 +17,16 @@
   </head>
 
   <body>
+    <div id="search" class="search">
+      <div id="search-cont" class="search-container">
+        <div id="header-search" class="wn-search">
+          <form id="hs-form" class="wn-search-form" action="" method="post">
+            <input class="wn-search-input" type="text" data-toggle="button" name="search" placeholder="Try 'Red velvet cake'" value="">
+            <button class="wn-search-button active" type="button" name="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <nav class="header">
       <!-- Inside div for top header -->
       <div class="header-in">
@@ -25,7 +35,7 @@
         </div>
         <!-- Main categories in header -->
         <div id="main-categories" class="main-categories">
-          <button type="button" name="button" class="myshop">My shop</button>
+          <!-- <button type="button" name="button" class="myshop">My shop</button> -->
           <ul id="mc-list" class="mc-list">
             <li class="mcl-item" >
               <a id="mcli-home" class="mcli-a" href="index.html">Home</a>
@@ -34,13 +44,16 @@
               <a id="mcli-req" class="mcli-a" href="request.html">Request</a>
             </li>
             <li class="mcl-item">
-              <a id="mcli-off" class="mcli-a" href="offers.html">Offers</a>
+              <a id="mcli-sell" class="mcli-a" href="sellyours.html">Sell your bakes</a>
             </li>
             <li class="mcl-item">
               <a id="mcli-log" class="mcli-a" href="login.html">Login</a>
             </li>
+            <li class="mcl-item">
+              <a id="mcli-signup" class="mcli-a" href="signup.html">Sign up</a>
+            </li>
           </ul>
-          <!-- Top right dropdown in m/view -->
+          <!-- Top right dropdown for mc in m/view -->
           <div id="main-ham" class="main-hamburger">
 
           </div>
@@ -49,20 +62,11 @@
 
     </nav>
 
-    <div class="search">
-      <div class="search-container">
-        <div id="header-search" class="wn-search">
-          <form class="wn-search-form" action="index.html" method="post">
-            <input class="wn-search-input" type="text" data-toggle="button" name="search" placeholder="Try 'Red velvet cake'" value="">
-            <button class="wn-search-button active" type="button" name="button">Search</button>
-          </form>
-        </div>
-      </div>
-    </div>
+
 
   <!-- Interface for first load -->
   <section id="welcome-section" class="welcome-note">
-    <div class="wn-container">
+    <div class="wn-cont">
       <!-- Seperate div for image -->
       <div class="wn-image-container">
         <img id="wn-image" class="wn-image" src="images/cakes_for_pc.png" alt="">

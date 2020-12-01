@@ -5,6 +5,7 @@ body {
   text-align: center;
   margin: 0;
   font-family: 'Montserrat',sans-serif;
+  overflow-x: hidden;
 }
 
 p {
@@ -46,7 +47,7 @@ ul li a:hover {
   background-color: #206a5d;
   width: 100%;
   height: 4.5rem;
-  position: fixed;
+  position: relative;
   margin: 0;
   z-index: 2;
   transition-duration: 0.4s;
@@ -60,8 +61,9 @@ ul li a:hover {
 
 .header-in {
   height: 4.5rem;
-  width: 100%;
-  padding: 0.9rem 5%;
+  width: 90%;
+  padding: 0.9rem 0;
+  margin: 0 auto;
   position: relative;
   display: flex;
 }
@@ -172,47 +174,41 @@ ul li a:hover {
 }
 /**********************Search_Section**********************/
 
-.search {
+#search {
   width: 100%;
-  height: 8rem;
-  padding-top: 4.5rem;
+  height: 4.5rem;
   z-index: 1;
   background-color: #206a5d;
   position: fixed;
-  /* display: none; */
 }
 
-.search-container {
+#search-cont {
   width: 90%;
   margin: 0 auto;
-  height: 3.6rem;
+  height: 4.5rem;
+  padding: 0.8rem 0;
   text-align: right;
 }
 
 #header-search.wn-search {
-  padding: 0.5rem 0 0.9rem 0;
-  margin: 0 0 0 auto;
   width: auto;
 }
 
-#header-search form {
-  width: 35%;
-  height: 2.25rem;
+#hs-form {
   margin-right: auto;
 }
 /**********************Welcome_Note_Section**********************/
 
 .welcome-note {
   width: 100%;
-  height: 31.6rem;
+  height: 27.1rem;
   position: relative;
   background-color: #206a5d;
   margin: 0;
-  padding-top: 4.5rem;
   /* box-sizing: content-box; */
 }
 
-.wn-container {
+.wn-cont {
   position: relative;
   width: 90%;
   height: 100%;
@@ -245,7 +241,7 @@ ul li a:hover {
 }
 
 .wn-search-input {
-  width: 80%;
+  width: 100%;
   border: 3px solid white;
   border-radius: 3px;
   font-size: 1rem;
@@ -263,7 +259,7 @@ ul li a:hover {
 }
 
 .wn-search-form {
-  width: 70%;
+  width: 100%;
   display: flex;
 }
 
@@ -386,7 +382,7 @@ ul li a:hover {
 }
 
 .card:hover {
-  box-shadow: 0 0 10px grey;
+  box-shadow: 0 3px 5px grey;
 }
 
 .item-name {
