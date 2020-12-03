@@ -172,6 +172,30 @@ ul li a:hover {
 .myshop:active {
   background-color: #206a5d;
 }
+
+/* main hamburger styles */
+.mh, .main-ham {
+  width: 2rem;
+  cursor: pointer;
+  display: none;
+  position: relative;
+}
+
+@media screen and (max-width: 960px) {
+  .mh, .main-ham {
+    display: flex;
+    margin-left: auto;
+  }
+  .main-categories {
+    width: auto;
+  }
+  .mc-list {
+    display: none;
+  }
+}
+
+
+
 /**********************Search_Section**********************/
 
 #search {
@@ -243,12 +267,12 @@ ul li a:hover {
 .wn-search-input {
   width: 100%;
   border: 3px solid white;
-  border-radius: 3px;
+  /* border-radius: 3px; */
   font-size: 1rem;
   font-weight: 500;
   font-family:'Montserrat', sans-serif;
   color: #206a5d;
-  background-image: url(images\loupe.png);
+  background-image: url('images/loupe.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 8px 20px 8px 40px;
@@ -259,8 +283,12 @@ ul li a:hover {
 }
 
 .wn-search-form {
-  width: 100%;
+  width: 80%;
   display: flex;
+}
+
+#hs-form.wn-search-form {
+  width: 100%;
 }
 
 .wn-search-button {
@@ -272,9 +300,7 @@ ul li a:hover {
   text-align: center;
   text-decoration: none;
   border: 2px solid #81b214;
-  border-radius: 3px;
   background-color: #81b214;
-  margin-left: 10px;
   transition-duration: 0.15s;
 }
 
@@ -287,7 +313,7 @@ ul li a:hover {
   /* box-shadow:0 0 0 2px #81b214; */
 }
 
-.wn-image-container {
+.wn-image-cont {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -295,13 +321,60 @@ ul li a:hover {
 }
 
 .wn-image {
-  position: relative;
+  position: absolute;
   height: 23.5rem;
-  padding-top: 3.6rem;
+  box-sizing: content-box;
   bottom: 0;
+  right: 0;
+}
+
+.wni-mob {
+  position: absolute;
+  display: none;
+  width: 100%;
+  bottom: 0;
+  align-items: center;
   box-sizing: content-box;
 }
 
+/* welcome section media query */
+@media screen and (max-width: 960px) {
+  .wn-image {
+    display: none;
+  }
+  .wni-mob {
+    margin: auto auto 0 auto;
+    display: block;
+    margin: 0;
+  }
+  .wn-image-cont {
+
+    text-align: center;
+  }
+  .wn-content {
+    text-align: center;
+    width: 100%;
+  }
+  .wn-search-form {
+    width: 21rem;
+  }
+  .wn-search {
+    /* padding: 0 25rem 0 3rem; */
+    justify-content: space-around;
+  }
+  .welcome-note {
+    height: 26rem;
+  }
+  .wn-text {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width:598px) {
+  .welcome-note {
+    height: 30rem;
+  }
+}
 /**********************Popular_Searches_Section**********************/
 
 /* section styles */
@@ -632,7 +705,8 @@ ul li a:hover {
   justify-content: space-between;
   display: flex;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid gray;
+
 }
 
 .test-rq p {

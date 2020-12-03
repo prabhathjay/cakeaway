@@ -1,1 +1,58 @@
 
+/* .card {
+  width:100px;
+  height: 150px;
+} */
+
+.ts1 {
+  width: 100px;
+  height: 100px;
+}
+
+.ts2 {
+
+}
+
+.ts3 {
+  height: 50px;
+  width: 100%;
+}
+
+
+.ts11 {
+  width: 100px;
+  height: 100px;
+}
+
+
+.ts21 {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.ts21 h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.ts22 {
+  padding: 0 1rem 0 1rem;
+}
+
+.ts22 h5 {
+  padding: 0;
+}
+
+.ts23 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.ts23 h5, .ts23 p {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 0;
+}
